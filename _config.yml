@@ -1,0 +1,21 @@
+# Built with Jekyll 3.2.0
+
+title:               GoyoBot
+tagline:             ''
+description:         ''
+url:                 https://goyobot.github.io
+baseurl:             ''
+twitter_username:    goyobot
+github_username:     goyobot
+
+permalink: pretty
+permalink: /:title/
+
+encoding: utf-8
+
+markdown: kramdown
+
+theme: minima
+
+sass:
+    sass_dir: _sass

@@ -1,0 +1,35 @@
+.main-logo {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 70px;
+    color: #484848;
+    font-weight: bold;
+}
+
+.main-description {
+    max-width: 600px;
+}
+
+.equipos-section {
+    max-width: 950px;
+}
+
+.slack-icon {
+    max-width: 250px;
+}
+
+.octocat-icon {
+    max-width: 200px;
+}
+
+.arduino-icon {
+    max-width: 300px;
+}
+
+.method-title {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.index-section {
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+}
