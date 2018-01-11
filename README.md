@@ -31,10 +31,12 @@ Before pushing something to the public repo, you should test it locally.
 2. Clone this repo.
 3. Build and start a local server to view your site:
 
-    $ cd goyobot.github.io
-    $ jekyll serve
+```bash
+$ cd goyobot.github.io
+$ jekyll serve
+```
 
-Now, open a browser in `localhost:4000` to check your changes _et voilà_.
+Now, open `http://localhost:4000` in a browser _et voilà_.
 
 The moment you edit and save a source code file while Jekyll is serving, it rebuilds the file to `site`, so it's very fast for testing.
 
