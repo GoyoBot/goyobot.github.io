@@ -1,0 +1,32 @@
+#
+# This file stores organization of members.
+# The order of this file reflects in `index.html`.
+#
+# Each member here should have a custom `_data/<member>.yml` file
+# with all the info.
+#
+
+teams:
+  - course: 2° Sistemas Microinformáticos y Redes
+    team_name: SMR
+    authors:
+      - manu
+      - lucas
+      - nata
+      - leo
+      - jorgeb
+      - jorges
+      - chris
+
+  - course: 2° Desarrollo de Aplicaciones Microinformáticas
+    team_name: DAM IT!
+    authors:
+      - german
+      - luis
+      - long
+      - alejandro
+      - adrian
+      - victor
+
+teachers:
+  - santi

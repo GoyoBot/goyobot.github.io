@@ -1,45 +1,48 @@
 ---
 layout: index
+isindex: true
 ---
+{% comment %}
+
+Data for members (teams and teachers) can be found in `_data/members.yml`.
+Here, members are looped to show names and icons.
+Please, read the comments in that file.
+
+{% endcomment %}
 <div class="container mt-2">
     <header>
         <h1 class="text-center main-logo">GoyoBot</h1>
         <p class="text-center mx-auto main-description">Descripción.&nbsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel egestas est.</p>
     </header>
     <section class="mt-5 equipos-section mx-auto">
-        <h2 class="text-center mb-4 text-success index-section">Nuestros equipos</h2>
+        <h2 class="text-center mb-4 mb-md-4 text-success index-section">Nuestros equipos</h2>
         <div class="row">
-            <div class="text-center border-secondary col-md-6">
+        {% for team in site.data.members.teams %}
+            <div class="text-center col-md-6 mt-md-0 mt-4">
                 <div>
-                    <button type="button" class="btn btn-danger w-75" style="max-width: 500px;">SMR</button>
+                    <button type="button" class="btn btn-danger w-75" style="max-width: 500px;">{{ team.team_name }}</button>
                 </div>
                 <div class="mt-3">
-                    <img src="{{ site.baseurl }}/assets/img/members/default.png" width="60" height="60" class="rounded-circle">
-                    <img src="{{ site.baseurl }}/assets/img/members/default.png" width="60" height="60" class="rounded-circle">
-                    <img src="{{ site.baseurl }}/assets/img/members/default.png" width="60" height="60" class="rounded-circle">
-                    <img src="{{ site.baseurl }}/assets/img/members/default.png" width="60" height="60" class="rounded-circle">
-                    <img src="{{ site.baseurl }}/assets/img/members/default.png" width="60" height="60" class="rounded-circle">
-                    <img src="{{ site.baseurl }}/assets/img/members/default.png" width="60" height="60" class="rounded-circle">
-                    <img src="{{ site.baseurl }}/assets/img/members/default.png" width="60" height="60" class="rounded-circle">
+                {% for author in team.authors %}
+                {%   assign icon_file = "assets/img/members/default.png" %}
+                {%   if site.data[author] %}
+                {%     assign icon_file = site.data[team].icon %}
+                {%   endif %}
+                      <img src="{{ site.baseurl }}/{{ icon_file }}" width="60" height="60" class="rounded-circle">
+                {% endfor %}
                 </div>                         
             </div>
-            <div class="col-md-6 border-secondary text-center mt-md-0 mt-4">
-                <div>
-                    <button type="button" class="btn btn-danger w-75" style="max-width: 500px;">DAM</button>
-                </div>
-                <div class="mt-3">
-                    <img src="{{ site.baseurl }}/assets/img/members/default.png" width="60" height="60" class="rounded-circle">
-                    <img src="{{ site.baseurl }}/assets/img/members/default.png" width="60" height="60" class="rounded-circle">
-                    <img src="{{ site.baseurl }}/assets/img/members/default.png" width="60" height="60" class="rounded-circle">
-                    <img src="{{ site.baseurl }}/assets/img/members/default.png" width="60" height="60" class="rounded-circle">
-                    <img src="{{ site.baseurl }}/assets/img/members/default.png" width="60" height="60" class="rounded-circle">
-                    <img src="{{ site.baseurl }}/assets/img/members/default.png" width="60" height="60" class="rounded-circle">
-                </div>                         
-            </div>
+        {% endfor %}
         </div>
         <div class="text-center mt-4">
             <p style="margin-bottom: 7px;">Y además:</p>
-            <img src="{{ site.baseurl }}/assets/img/members/default.png" width="60" height="60" class="rounded-circle">
+            {% for teacher in site.data.members.teachers %}
+            {%   assign icon_file = teacher %}
+            {%   if site.data[teacher] %}
+            {%     assign icon_file = site.data[teacher].icon %}
+            {%   endif %}
+            <img src="{{ site.baseurl }}/{{ icon_file }}" width="60" height="60" class="rounded-circle">
+            {% endfor %}
         </div>
     </section>
     <section style="max-width: 800px;" class="mx-auto mr-auto ml-auto mt-5">
