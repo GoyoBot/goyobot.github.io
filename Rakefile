@@ -60,7 +60,7 @@ task :build_members do
   users.each { |user|
     user_file = "#{members_dir}/#{user}.md"
     if ! File.exist?(user_file) then
-      content = "---\nlayout: user_profile\nuser: #{user}\n---"
+      content = "---\nlayout: user_profile\nauthor: #{user}\n---"
       File.write(user_file, content)
       puts "Created #{user_file}"
     end
