@@ -1,6 +1,6 @@
 ---
 # Set your link name. If empty, the default is /authors/<user>
-permalink: myname
+permalink: default
 
 # Info for the page layout
 # The team must be an id from _data/teams.yml

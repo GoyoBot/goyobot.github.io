@@ -15,6 +15,7 @@ encoding: utf-8
 
 markdown: kramdown
 
+exclude: ["_authors/default.md"]
 
 collections:
   authors:           # Set the _authors directory as a collection
