@@ -20,7 +20,7 @@ Please, read the comments in that file.
         {% for team in site.data.teams.students %}
             <div class="text-center col-md-6 mt-md-0 mt-4">
                 <div>
-                    <button type="button" class="btn btn-danger w-75" style="max-width: 500px;">{{ team.team_name }}</button>
+                    <button type="button" class="btn btn-danger w-75" style="max-width: 500px;">{{ team.name }}</button>
                 </div>
                 <div class="mt-3">
                 {% assign authors = site.authors | where: 'team', team.id %}
@@ -29,7 +29,7 @@ Please, read the comments in that file.
                 {%   if author.icon %}
                 {%     assign icon_file = author.icon %}
                 {%   endif %}
-                    <a href="{{ site.baseurl }}{{ author.url }}"><img src="{{ site.baseurl }}/{{ icon_file }}" width="60" height="60" class="rounded-circle"></a>
+                    <a href="{{ site.baseurl }}{{ author.url }}"><img src="{{ site.baseurl }}/{{ icon_file }}" alt="Icono de {{ author.shortname }}" width="60" height="60" class="rounded-circle"></a>
                 {% endfor %}
                 </div>                         
             </div>
@@ -43,7 +43,7 @@ Please, read the comments in that file.
             {%   if author.icon %}
             {%     assign icon_file = author.icon %}
             {%   endif %}
-              <a href="{{ site.baseurl }}{{ author.url }}"><img src="{{ site.baseurl }}/{{ icon_file }}" width="60" height="60" class="rounded-circle"></a>
+              <a href="{{ site.baseurl }}{{ author.url }}"><img src="{{ site.baseurl }}/{{ icon_file }}" alt="Icono de {{ author.shortname }}" width="60" height="60" class="rounded-circle"></a>
             {% endfor %}
         </div>
     </section>
