@@ -14,3 +14,14 @@ permalink: /:title/
 encoding: utf-8
 
 markdown: kramdown
+
+collections:
+  authors:
+    title: Authors
+    output: true
+
+defaults:
+  - scope:
+      path: _authors
+    values:
+      layout: user_profile

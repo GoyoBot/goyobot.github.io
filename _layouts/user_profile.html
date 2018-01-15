@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<nav aria-label="breadcrumb" role="navigation">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="{{ site.url }}">GoyoBot</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">{{ page.permalink }}</li>
+    </ol>
+</nav>
+<div class="container">
+    <div class="text-center">
+        <img src="{{ site.baseurl }}/{{ page.icon }}" width="200" height="200" />
+        <h1>{{ page.shortname }}</h1>
+    </div>
+    <div class="pl-2" style="border-left: 3px solid #d9534f;">
+        <p class="mb-0 text-secondary">{{ page.fullname }}</p>
+        <p class="mb-0">Miembro de <a href="{{ site.url }}" class="text-success">GoyoBot</a>
+            {% assign student_teams = site.data.teams["students"] | where: 'id', page.team %}
+            {% if student_teams[0] %}
+            {%   assign team = student_teams[0] %}
+            {% elsif page.team == site.data.teams["teachers"].id %}
+            {%   assign team = site.data.teams["teachers"] %}
+            {% endif %}
+            {% if team %}
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                <a href="{{ team.id }}" class="badge badge-primary">{{ team.name }}</a>
+            {% endif %}
+        </p>
+        <p class="mb-0"><a href="{{ author.url }}">{{ page.website }}</a></p>
+        <p class="pb-0" style="font-size: 30px;">{% if page.github %}<a href="https://github.com/{{ page.github }}"><i class="fa fa-github" aria-hidden="true"></i></a>{% endif %} {% if page.twitter %}<a href="https://twitter.com/{{ page.twitter }}"><i class="fa fa-twitter"></i></a>{% endif %}</p>
+    </div>
+    <div>
+    {{ content }}
+    </div>
+</div>
+
+

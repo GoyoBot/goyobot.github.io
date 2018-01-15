@@ -12,15 +12,18 @@ Keep the source code in English, please.
 
 
 
-## Member info
+## Authors info
 
-If you are a new member, please add your personal information:
+How authors (members) are managed:
 
-- `_data/members.yml` keeps the main organizational structure. Make sure you have a name there and the organization is correct. Keep a simple name there; it is only used as a reference.
-- Given your internal name in the previous step, add a file like `_data/<member>.yml`.
-- `_data/default.yml` has the default data if your user info file is missing. Use it as a template.
+- The folder `_authors` contains a file per author. Use the `default.md` template.
+- Your `<author>.md` file 
+- Authors are set as a collection in `_config.yml`, and they are set as `output: true` so that a page is created for them. The default layout for authors is configured as `layout: user_profile`.
+- The link to your author is `authors/<author>` by default, but the `permalink: <author>` in your markdown file can be used to make the link be simply `/<author>`.
 
-Store your icon file in `assets/img/members/<member>.png`.
+Make sure yout `team` in yout markdown file is set to one of the team ids in `_data/teams.yml`.
+
+Store your icon file as `assets/img/authors/<author>.png`. It should be 200x200 px.
 
 
 ## Local development

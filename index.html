@@ -17,18 +17,19 @@ Please, read the comments in that file.
     <section class="mt-5 equipos-section mx-auto">
         <h2 class="text-center mb-4 mb-md-4 text-success index-section">Nuestros equipos</h2>
         <div class="row">
-        {% for team in site.data.members.teams %}
+        {% for team in site.data.teams.students %}
             <div class="text-center col-md-6 mt-md-0 mt-4">
                 <div>
                     <button type="button" class="btn btn-danger w-75" style="max-width: 500px;">{{ team.team_name }}</button>
                 </div>
                 <div class="mt-3">
-                {% for author in team.authors %}
+                {% assign authors = site.authors | where: 'team', team.id %}
+                {% for author in authors %}
                 {%   assign icon_file = "assets/img/members/default.png" %}
-                {%   if site.data[author] %}
-                {%     assign icon_file = site.data[team].icon %}
+                {%   if author.icon %}
+                {%     assign icon_file = author.icon %}
                 {%   endif %}
-                      <img src="{{ site.baseurl }}/{{ icon_file }}" width="60" height="60" class="rounded-circle">
+                    <a href="{{ site.baseurl }}{{ author.url }}"><img src="{{ site.baseurl }}/{{ icon_file }}" width="60" height="60" class="rounded-circle"></a>
                 {% endfor %}
                 </div>                         
             </div>
@@ -36,12 +37,13 @@ Please, read the comments in that file.
         </div>
         <div class="text-center mt-4">
             <p style="margin-bottom: 7px;">Y además:</p>
-            {% for teacher in site.data.members.teachers %}
-            {%   assign icon_file = teacher %}
-            {%   if site.data[teacher] %}
-            {%     assign icon_file = site.data[teacher].icon %}
+            {% assign authors = site.authors | where: 'team', site.data.teams.teachers.id %}
+            {% for author in authors %}
+            {%   assign icon_file = "assets/img/members/default.png" %}
+            {%   if author.icon %}
+            {%     assign icon_file = author.icon %}
             {%   endif %}
-            <img src="{{ site.baseurl }}/{{ icon_file }}" width="60" height="60" class="rounded-circle">
+              <a href="{{ site.baseurl }}{{ author.url }}"><img src="{{ site.baseurl }}/{{ icon_file }}" width="60" height="60" class="rounded-circle"></a>
             {% endfor %}
         </div>
     </section>
