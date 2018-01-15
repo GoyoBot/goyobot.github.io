@@ -131,8 +131,9 @@ Before pushing something to the public repo, you should test it locally.
 3. Build and start a local server to view your site:
 
 ```bash
+$ git clone https://github.com/GoyoBot/goyobot.github.io.git
 $ cd goyobot.github.io
-$ jekyll serve
+$ rake serve
 ```
 
 Now, open `http://localhost:4000` in a browser _et voilà_.
@@ -140,3 +141,25 @@ Now, open `http://localhost:4000` in a browser _et voilà_.
 The moment you edit and save a source code file while Jekyll is serving, it rebuilds the file to `_site`, so it's very fast for testing.
 
 For more in-depth info about Jekyll, you can use [this tutorial](https://santi-gf.github.io/jekyll) (in Spanish).
+
+
+
+## Advanced dev
+
+Use `bundler` to install all dependencies found in `Gemfile`:
+
+```bash
+$ gem install bundler  # If not installed
+$ bundler install
+```
+
+A `Rakefile` is provided to simplify some tasks:
+
+```bash
+$ rake
+rake build  # Build the jekyll site
+rake serve  # Build and serve the jekyll site
+rake test   # Build and test the jekyll site
+```
+
+Use `rake test` to test the whole website with [HTML-Proofer](https://github.com/gjtorikian/html-proofer) (broken links and images, bad HTML...)
