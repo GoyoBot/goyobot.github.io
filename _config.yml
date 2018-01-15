@@ -15,12 +15,13 @@ encoding: utf-8
 
 markdown: kramdown
 
+
 collections:
-  authors:
-    title: Authors
-    output: true
+  authors:           # Set the _authors directory as a collection
+    output: true     # Make the author profile public
 
 defaults:
+  # Set the default layout for all authors
   - scope:
       path: _authors
     values:
