@@ -1,15 +1,15 @@
 ---
 # Set your link name. If empty, the default is /authors/<user>
-permalink: leo
+permalink: Leo
 
 # Info for the page layout
 team: smr
-shortname: Miembro
-fullname: Este personaje es un misterio...
+shortname: llorenzogo
+fullname: Leonardo Lorenzo Gordo
 website: http://goyobot.github.io
-github: goyobot
-twitter: goyobot
-icon: assets/img/members/default.png
+github: https://github.com/llorenzogo
+twitter: https://twitter.com/leonardolg24
+icon: ![llorenzogo](/assets/img/members/llorenzogo.png)
 ---
 
 Miebro de Goyobot.
