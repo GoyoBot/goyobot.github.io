@@ -8,7 +8,7 @@ shortname:Long
 fullname: ZhangLong
 website: http://goyobot.github.io
 github: https://github.com/iamtheion
-twitter: 
+twitter: No Tengo
 icon: assets/img/members/default.png
 ---
 
