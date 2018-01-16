@@ -8,7 +8,7 @@ team: dam
 shortname: Long
 fullname: ZhangLong
 website: http://goyobot.github.io
-github: https://github.com/iamtheion
+github: iamtheion
 twitter:
 icon: assets/img/members/long.png
 ---
