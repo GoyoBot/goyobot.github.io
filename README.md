@@ -88,8 +88,8 @@ permalink: myname
 
 # Info for the page layout
 team: smr
-shortname: Miembro
-fullname: Este personaje es un misterio...
+shortname: Nombre
+fullname: Nombre Completo
 website: http://goyobot.github.io
 github: goyobot
 twitter: goyobot
@@ -99,7 +99,7 @@ icon: assets/img/authors/default.png
 This is the author description.
 
 - Use **markdown** syntax here
-- No need to write a formal, boring bio zzz...
+- No need to write a real and formal bio
 ```
 
 
