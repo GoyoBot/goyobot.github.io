@@ -4,11 +4,11 @@ permalink: long
 
 # Info for the page layout
 team: dam
-shortname: Miembro
-fullname: Este personaje es un misterio...
+shortname:Long
+fullname: ZhangLong
 website: http://goyobot.github.io
-github: goyobot
-twitter: goyobot
+github: https://github.com/iamtheion
+twitter: 
 icon: assets/img/members/default.png
 ---
 
