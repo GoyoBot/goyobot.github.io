@@ -14,4 +14,4 @@ icon: assets/img/members/default.png
 
 Miebro de Goyobot.
   
-Hola buenas soy Long SOy del equipo de DAM IT!.
+Hola buenas soy Longdel equipo de DAM IT!.
