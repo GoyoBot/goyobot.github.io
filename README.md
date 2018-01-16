@@ -15,7 +15,7 @@ Keep the source code in English, please.
 
 - `_config.yml` is the main config file for the site.
 - Your posts go in `_posts/`.
-- See the whole [directory structure](https://jekyllrb.com/docs/structure/).
+- See the Jekyll [directory structure](https://jekyllrb.com/docs/structure/).
 
 Any post or page has two parts [explained here](https://jekyllrb.com/docs/posts/):
 
@@ -53,7 +53,7 @@ The contents of my post/page.
 
 The templates we use can be found in `_layouts` and `_includes`.
 
-We use [Bootstrap 4](https://v4-alpha.getbootstrap.com) and [Font Awesome](http://fontawesome.io).
+We use [Bootstrap 4](https://v4-alpha.getbootstrap.com) and [Font Awesome](http://fontawesome.io). You can just use them in any page or post.
 
 Since Jekyll uses [Kramdown](https://kramdown.gettalong.org/syntax.html) as a Markdown renderer, it's very easy to add Bootstrap classes:
 
@@ -75,19 +75,18 @@ How authors (members) are managed:
 
 - `_authors/` contains a file per author.
 - Add your `<author>.md` file if you don't have one using `default.md` as a template.
-- The link to your author is `goyobot.github.io/authors/<author>` by default, but the `permalink: <author>` in your markdown file can be used to make the link be simply `goyobot.github.io/<author>`.
-- Make sure yout `team` in your markdown file is set to one of the team ids in `_data/teams.yml`.
+- The link to your author is `goyobot.github.io/authors/<author>` by default, but the `permalink: <author>` in your author file can be used to make the link be simply `goyobot.github.io/<author>`.
+- Make sure the `team` in your markdown file is set to one of the team ids in `_data/teams.yml`.
 - Store your icon file as `assets/img/authors/<author>.png` (200x200 px).
 
 Example of `<author>.md`:
 
 ```
 ---
-# Set your link name. If empty, the default is /authors/<user>
+# Set your link name.
 permalink: myname
 
 # Info for the page layout
-# The team must be an id from _data/teams.yml
 team: smr
 shortname: Miembro
 fullname: Este personaje es un misterio...
@@ -97,11 +96,10 @@ twitter: goyobot
 icon: assets/img/authors/default.png
 ---
 
-This is the author description that will appear in his page.
+This is the author description.
 
-- Use markdown syntax here
-- Actually, Jekyll uses [kramdown](https://kramdown.gettalong.org), so you have some fancy tricks{:badge badge-primary}.
-- No need to write a real, formal, boring bio zzz...
+- Use **markdown** syntax here
+- No need to write a formal, boring bio zzz...
 ```
 
 
@@ -158,8 +156,8 @@ A `Rakefile` is provided to simplify some tasks:
 ```bash
 $ rake
 rake build  # Build the jekyll site
-rake serve  # Build and serve the jekyll site
-rake test   # Build and test the jekyll site
+rake serve  # Build and serve the site
+rake test   # Build and test the site
 ```
 
 Use `rake test` to test the whole website with [HTML-Proofer](https://github.com/gjtorikian/html-proofer) (broken links and images, bad HTML...)
