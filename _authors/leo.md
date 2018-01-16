@@ -9,9 +9,13 @@ fullname: Leonardo Lorenzo Gordo
 website: http://goyobot.github.io
 github: https://github.com/llorenzogo
 twitter: https://twitter.com/leonardolg24
-icon: ![llorenzogo](/assets/img/members/llorenzogo.png)
+icon: /assets/img/members/llorenzogo.png
 ---
+> De mi solo puedo decir que tengo un gran compromiso hacia lo que me importa. El tema es... ¿Me Importas?
 
-Miebro de Goyobot.
-  
-Aún no tiene descripción, pero te aseguramos que toma microchips con leche para desayunar. 💪
+Miembro de Goyobot. 
+
+Estudiante de Sistemas Microinformáticos y Redes en el CEC Gregorio Fernández.  
+
+Geek  |  Photo Editing  |  Code the web  |  Graphic Designer  | Hylian  
+        
