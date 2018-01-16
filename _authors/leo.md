@@ -7,8 +7,8 @@ team: smr
 shortname: llorenzogo
 fullname: Leonardo Lorenzo Gordo
 website: http://goyobot.github.io
-github: https://github.com/llorenzogo
-twitter: https://twitter.com/leonardolg24
+github: llorenzogo
+twitter: leonardolg24
 icon: assets/img/members/leo.png
 ---
 > De mi solo puedo decir que tengo un gran compromiso hacia lo que me importa. El tema es... ¿Me Importas?
