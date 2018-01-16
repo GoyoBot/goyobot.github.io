@@ -8,7 +8,7 @@ shortname: Santi
 fullname: Santiago González
 website: https://santi-gf.github.io
 github: santi-gf
-twitter: santi_gf
+twitter: santi_gz_
 icon: assets/img/members/santi.png
 ---
 
