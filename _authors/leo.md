@@ -18,4 +18,3 @@ Miembro de Goyobot.
 Estudiante de Sistemas Microinformáticos y Redes en el CEC Gregorio Fernández.  
 
 Geek  |  Photo Editing  |  Code the web  |  Graphic Designer  | Hylian  
-        
