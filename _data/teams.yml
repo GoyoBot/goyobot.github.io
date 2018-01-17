@@ -1,7 +1,10 @@
 #
-# Teams info
-# 
-# All authors under _authors/ must have one of the next ids.
+# Teams info.
+# All authors under `_authors/` must have one of the next ids.
+#
+# The `type` differences teams, so that:
+# - There is only one list with all teams (students and teachers)
+# - You can easily filter teams: `site.data.teams | where: 'type', 'student'`
 #
 
 - id: smr

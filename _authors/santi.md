@@ -1,9 +1,11 @@
 ---
-# Set your link name. If empty, the default is /authors/<user>
+# Your link name. If empty, the default is `/authors/<user>`
 permalink: santi
 
-# Info for the page layout
-team: teacher
+team_id: teacher      # Must and id in `_data/teams.yml`
+author_id: santi      # Your `author:` in posts
+
+# Author info - edit this at any time
 shortname: Santi
 fullname: Santiago González
 website: https://santi-gf.github.io

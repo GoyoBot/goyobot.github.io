@@ -18,7 +18,7 @@ isindex: true
                     <button type="button" class="btn btn-danger w-75" style="max-width: 500px;">{{ team.name }}</button>
                 </div>
                 <div class="mt-3">
-                {% assign authors = site.authors | where: 'team', team.id %}
+                {% assign authors = site.authors | where: 'team_id', team.id %}
                 {% for author in authors %}
                 {%   assign icon_file = "assets/img/members/default.png" %}
                 {%   if author.icon %}
@@ -32,7 +32,7 @@ isindex: true
         </div>
         <div class="text-center mt-4">
             <p style="margin-bottom: 7px;">Y además:</p>
-            {% assign authors = site.authors | where: 'team', 'teacher' %}
+            {% assign authors = site.authors | where: 'team_id', 'teacher' %}
             {% for author in authors %}
             {%   assign icon_file = "assets/img/members/default.png" %}
             {%   if author.icon %}
@@ -85,7 +85,6 @@ isindex: true
             <h3>Artículo</h3>
             <p>Paragraph</p>
         </article>
-        {% include post-list.html posts=site.posts %}
     </section>
     <nav aria-label="Navegación por las entradas del blog">
         <ul class="pagination justify-content-center"> 

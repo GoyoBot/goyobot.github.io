@@ -1,10 +1,11 @@
 ---
-# Set your link name. If empty, the default is /authors/<user>
+# Your link name. If empty, the default is `/authors/<user>`
 permalink: default
 
-# Info for the page layout
-# The team must be an id from _data/teams.yml
-team: smr
+team_id: smr          # Must and id in `_data/teams.yml`
+author_id: default    # Your `author:` in posts
+
+# Author info - edit this at any time
 shortname: Miembro
 fullname: Este personaje es un misterio...
 website: http://goyobot.github.io

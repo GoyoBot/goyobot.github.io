@@ -1,9 +1,11 @@
 ---
-# Set your link name. If empty, the default is /authors/<user>
+# Your link name. If empty, the default is `/authors/<user>`
 permalink: german
 
-# Info for the page layout
-team: dam
+team_id: dam          # Must and id in `_data/teams.yml`
+author_id: german     # Your `author:` in posts
+
+# Author info - edit this at any time
 shortname: Miembro
 fullname: Este personaje es un misterio...
 website: http://goyobot.github.io
