@@ -1,0 +1,30 @@
+{% comment %}
+# 
+# This file requires the input of the posts you want to be displayed.
+# 
+# All posts: include posts.html posts=site.posts
+# Particular author: include posts.html posts=site.posts | where: 'author', 'author_name'
+#
+{% endcomment %}
+
+{% for post in include.posts %}
+{% assign author = site.authors | where: 'author_id', post.author %}
+{% assign author = author[0] %}
+<article>
+    <header class="mb-3">
+        <h2 class="text-danger index-section mb-0">{{ post.title }}</h2>
+        <span class="text-secondary">
+        {% include date.html date=post.date class="float-left mr-1" %}
+        <!-- <time pubdate datetime="" class="float-left mr-1">10 de enero</time> -->
+        <address class="author mb-0">
+            · <a rel="author" href="/author/john-doe">{{ author.shortname }}</a>
+            {% assign teams = site.data.teams | where: 'id', author.team_id %}
+            {% for team in teams %}
+                · <a href="#" class="badge badge-danger">{{ team.name }}</a>
+            {% endfor %}
+        </address>
+        </span>
+    </header>
+    {{ post.content }}
+</article>
+{% endfor %}

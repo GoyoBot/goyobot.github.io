@@ -81,10 +81,7 @@ isindex: true
     </section>
     <section class="mt-5">
         <h2 class="text-center text-success index-section">Blog</h2>
-        <article>
-            <h3>Artículo</h3>
-            <p>Paragraph</p>
-        </article>
+        {% include post-list.html posts=site.posts %}
     </section>
     <nav aria-label="Navegación por las entradas del blog">
         <ul class="pagination justify-content-center"> 

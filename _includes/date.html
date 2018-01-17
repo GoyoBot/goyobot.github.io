@@ -1,0 +1,29 @@
+{% comment %}
+# 
+# Input e.g.: date=post.date
+# The year is not displayed if it is the current year
+#
+{% endcomment %}
+<time pubdate datetime="{{ include.date | date: "%Y-%m-%d" }}" {% if include.class %}class="{{ include.class }}"{% endif %}>
+    {{ include.date | date: "%d" }}
+    {% assign m = include.date | date: "%-m" %}
+    {% case m %}
+        {% when '1' %}enero
+        {% when '2' %}febrero
+        {% when '3' %}marzo
+        {% when '4' %}abril
+        {% when '5' %}mayo
+        {% when '6' %}junio
+        {% when '7' %}julio
+        {% when '8' %}augosto
+        {% when '9' %}septiembre
+        {% when '10' %}octubre
+        {% when '11' %}noviembre
+        {% when '12' %}diciembre
+    {% endcase %}
+    {% assign current_year = site.time | date: '%Y' %}
+    {% assign include_year = include.date | date: '%Y' %}
+    {% if current_year != include_year %}
+        {{ include.date | date: "%Y" }}
+    {% endif %}
+</time>

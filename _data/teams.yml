@@ -2,21 +2,30 @@
 # Teams info.
 # All authors under `_authors/` must have one of the next ids.
 #
-# The `type` differences teams, so that:
-# - There is only one list with all teams (students and teachers)
-# - You can easily filter teams: `site.data.teams | where: 'type', 'student'`
+# `id` references an author `team_id`
+#
+# `type` differences teams:
+#   - There is only one list with all teams (students and teachers)
+#   - You can easily filter teams: `site.data.teams | where: 'type', 'student'`
+#
+# `name` is the displayed name of the team
+#
+# `page` refers to the team page for links pointing to it
 #
 
 - id: smr
   type: student
   course: 2° Sistemas Microinformáticos y Redes
   name: SMR
+  page: smr
 
 - id: dam
   type: student
   course: 2° Desarrollo de Aplicaciones Microinformáticas
   name: DAM IT!
+  page: dam-it
 
 - id: teacher
   type: teacher
   name: Profesor
+  page: profesores
