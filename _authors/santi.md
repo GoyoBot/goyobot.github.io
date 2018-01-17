@@ -3,7 +3,7 @@
 permalink: santi
 
 # Info for the page layout
-team: profe
+team: teacher
 shortname: Santi
 fullname: Santiago González
 website: https://santi-gf.github.io

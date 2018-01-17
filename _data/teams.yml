@@ -4,17 +4,16 @@
 # All authors under _authors/ must have one of the next ids.
 #
 
-# Student teams
-students:
-  - id: smr
-    course: 2° Sistemas Microinformáticos y Redes
-    name: SMR
+- id: smr
+  type: student
+  course: 2° Sistemas Microinformáticos y Redes
+  name: SMR
 
-  - id: dam
-    course: 2° Desarrollo de Aplicaciones Microinformáticas
-    name: DAM IT!
+- id: dam
+  type: student
+  course: 2° Desarrollo de Aplicaciones Microinformáticas
+  name: DAM IT!
 
-# Teacher teams
-teachers:
-  id: profe
-  name: Profe
+- id: teacher
+  type: teacher
+  name: Profesor

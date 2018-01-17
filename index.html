@@ -11,7 +11,8 @@ isindex: true
     <section class="mt-5 equipos-section mx-auto">
         <h2 class="text-center mb-4 mb-md-4 text-success index-section">Nuestros equipos</h2>
         <div class="row">
-        {% for team in site.data.teams.students %}
+        {% assign teams = site.data.teams | where: 'type', 'student' %}
+        {% for team in teams %}
             <div class="text-center col-md-6 mt-md-0 mt-4">
                 <div>
                     <button type="button" class="btn btn-danger w-75" style="max-width: 500px;">{{ team.name }}</button>
@@ -31,13 +32,13 @@ isindex: true
         </div>
         <div class="text-center mt-4">
             <p style="margin-bottom: 7px;">Y además:</p>
-            {% assign authors = site.authors | where: 'team', site.data.teams.teachers.id %}
+            {% assign authors = site.authors | where: 'team', 'teacher' %}
             {% for author in authors %}
             {%   assign icon_file = "assets/img/members/default.png" %}
             {%   if author.icon %}
             {%     assign icon_file = author.icon %}
             {%   endif %}
-              <a href="{{ site.baseurl }}{{ author.url }}"><img src="{{ site.baseurl }}/{{ icon_file }}" alt="Icono de {{ author.shortname }}" width="60" height="60" class="rounded-circle"></a>
+                <a href="{{ site.baseurl }}{{ author.url }}"><img src="{{ site.baseurl }}/{{ icon_file }}" alt="Icono de {{ author.shortname }}" width="60" height="60" class="rounded-circle"></a>
             {% endfor %}
         </div>
     </section>
@@ -84,6 +85,7 @@ isindex: true
             <h3>Artículo</h3>
             <p>Paragraph</p>
         </article>
+        {% include post-list.html posts=site.posts %}
     </section>
     <nav aria-label="Navegación por las entradas del blog">
         <ul class="pagination justify-content-center"> 
