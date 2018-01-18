@@ -4,14 +4,15 @@ permalink: jorge-sanchez
 
 # Info for the page layout
 team: smr
-shortname: Miembro
-fullname: Este personaje es un misterio...
+shortname: Jorge13;)
+fullname: Sistemasmicro2
 website: http://goyobot.github.io
-github: goyobot
-twitter: goyobot
+github: https://github.com/Jorge13v
+twitter:https://twitter.com/goyobot
+twitter:https://twitter.com/sanchezleite13
 icon: assets/img/members/default.png
 ---
 
 Miebro de Goyobot.
   
-Aún no tiene descripción, pero te aseguramos que toma microchips con leche para desayunar. 💪
+Soy un alumno de sistemas micro2 el cual mi fuerte es el esfuerzo y el trabajo de equipo el cual mencanta y tengo muchas ganas de dar robotica 
