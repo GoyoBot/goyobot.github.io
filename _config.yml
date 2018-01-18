@@ -27,3 +27,10 @@ defaults:
       path: _authors
     values:
       layout: user_profile
+
+# Pagination
+paginate: 2
+paginate_path: "/blog/:num/"
+
+plugins:
+  - jekyll-paginate

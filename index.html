@@ -83,28 +83,35 @@ isindex: true
         <h2 class="text-center text-success index-section">Blog</h2>
         {% include post-list.html posts=site.posts %}
     </section>
+{% comment %}
+    {% if paginator.total_pages > 1 %}
     <nav aria-label="Navegación por las entradas del blog">
-        <ul class="pagination justify-content-center"> 
-            <li class="page-item">
-                <a class="page-link" href="#" aria-label="Previous"> <span aria-hidden="true">&laquo;</span> <span class="sr-only">Previous</span> </a>
-            </li>                     
-            <li class="page-item">
-                <a class="page-link" href="#">1</a>
-            </li>                     
-            <li class="page-item">
-                <a class="page-link" href="#">2</a>
-            </li>                     
-            <li class="page-item">
-                <a class="page-link" href="#">3</a>
-            </li>                     
-            <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next"> <span aria-hidden="true">&raquo;</span> <span class="sr-only">Next</span> </a>
-            </li>                     
+        <ul class="pagination justify-content-center">
+            <li class="page-item{% unless paginator.previous_page %} disabled{% endunless %}">
+                <a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                </a>
+            </li>
+            {% for page in (1..paginator.total_pages) %}
+                {% if page == paginator.page %}
+                    <li class="page-item active"><span class="page-link">{{ page | pnumber }}</span></li>
+                {% elsif page == 1 %}
+                    <li class="page-item">
+                        <a class="page-link" href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page | pnumber }} <span class="sr-only">(actual)</span></a>
+                    </li>
+                {% else %}
+                    <li class="page-item"><a class="page-link" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page | pnumber }}</a></li>
+                {% endif %}
+            {% endfor %}
+            <li class="page-item{% unless paginator.next_page %} disabled{% endunless %}">
+                <a class="page-link" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </li>
         </ul>
     </nav>
+    {% endif %}
+{% endcomment %}
 </div>
-<footer class="bg-dark text-light pt-3" style="height: 100px;">
-    <div class="container">
-        <p>Here be dragons</p>
-    </div>
-</footer>
