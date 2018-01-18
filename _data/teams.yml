@@ -16,14 +16,14 @@
 - id: smr
   type: student
   course: 2° Sistemas Microinformáticos y Redes
-  name: SMR
-  page: smr
+  name: GoyoWarriors
+  page: GoyoWarriors
 
 - id: dam
   type: student
   course: 2° Desarrollo de Aplicaciones Microinformáticas
   name: DAM IT!
-  page: dam-it
+  page: DAM-IT
 
 - id: teacher
   type: teacher
