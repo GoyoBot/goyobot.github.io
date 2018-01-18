@@ -4,14 +4,15 @@ permalink: jorge-sanchez
 
 # Info for the page layout
 team: smr
-shortname: Miembro
-fullname: Este personaje es un misterio...
+shortname: Jorge13;)
+fullname: Jorge Sanchez Leite
 website: http://goyobot.github.io
 github: goyobot
-twitter: goyobot
+twitter: http://twitter.com/goyobot
+twitter:http://twitter.com/sanchezleite13
 icon: assets/img/members/default.png
 ---
 
 Miebro de Goyobot.
   
-Aún no tiene descripción, pero te aseguramos que toma microchips con leche para desayunar. 💪
+soy un alumno de sistemasmicro2 el cual su fuerte es el trabajo y el trabajo de equipo y es lo que mas me gusta y este es mi primer año que me pongo hacer robotica jejeje 
