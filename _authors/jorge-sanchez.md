@@ -8,8 +8,8 @@ shortname: Jorge13;)
 fullname: Jorge Sanchez Leite
 website: http://goyobot.github.io
 github: goyobot
-twitter: http://twitter.com/goyobot
-twitter:http://twitter.com/sanchezleite13
+twitter: goyobot
+twitter: sanchezleite13
 icon: assets/img/members/default.png
 ---
 
