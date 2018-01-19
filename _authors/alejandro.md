@@ -3,17 +3,16 @@
 permalink: alejandro
 
 team_id: dam          # Must and id in `_data/teams.yml`
-author_id: adrian     # Your `author:` in posts
+author_id: alejandro     # Your `author:` in posts
 
 # Author info - edit this at any time
-shortname: Miembro
-fullname: Este personaje es un misterio...
-website: http://goyobot.github.io
-github: goyobot
-twitter: goyobot
-icon: assets/img/members/default.png
+shortname: Alejandro
+fullname: Alejandro Bernal Ramos
+github: https://github.com/alejandrobrmp
+twitter: https://twitter.com/alejandrobrmp
+icon: assets/img/members/alejandro.png
 ---
 
-Miebro de Goyobot.
+Miembro de Goyobot e integrante del equipo DAM IT!
   
-Aún no tiene descripción, pero te aseguramos que toma microchips con leche para desayunar. 💪
+Let's create robots!
