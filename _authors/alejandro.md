@@ -8,8 +8,8 @@ author_id: alejandro     # Your `author:` in posts
 # Author info - edit this at any time
 shortname: Alejandro
 fullname: Alejandro Bernal Ramos
-github: https://github.com/alejandrobrmp
-twitter: https://twitter.com/alejandrobrmp
+github: alejandrobrmp
+twitter: alejandrobrmp
 icon: assets/img/members/alejandro.png
 ---
 
