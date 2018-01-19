@@ -7,7 +7,7 @@ author_id: nata       # Your `author:` in posts
 
 # Author info - edit this at any time
 shortname: Miembro
-fullname: Este personaje es un misterio...
+fullname: Nataly González Sepúlveda
 website: http://goyobot.github.io
 github: goyobot
 twitter: goyobot
