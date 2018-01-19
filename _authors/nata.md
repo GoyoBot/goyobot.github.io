@@ -11,7 +11,7 @@ fullname: Nataly González Sepúlveda
 website: http://goyobot.github.io
 github: goyobot
 twitter: goyobot
-icon: assets/img/members/default.png
+icon: assets/img/members/nata.png
 ---
 
 Miebro de Goyobot.
