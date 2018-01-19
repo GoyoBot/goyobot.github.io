@@ -16,4 +16,4 @@ icon: assets/img/members/default.png
 
 Miebro de Goyobot.
   
-Aún no tiene descripción, pero te aseguramos que toma microchips con leche para desayunar. 💪
+Me gustan los gatos peludos, son muy suaves. 💪
