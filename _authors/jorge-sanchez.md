@@ -12,7 +12,7 @@ website: http://goyobot.github.io
 github: goyobot
 twitter: goyobot
 twitter: sanchezleite13
-github.com/account//github.com/accountng
+
 ---
 
 Miebro de Goyobot.
