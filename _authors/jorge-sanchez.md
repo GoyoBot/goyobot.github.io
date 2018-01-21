@@ -12,7 +12,7 @@ website: http://goyobot.github.io
 github: goyobot
 twitter: goyobot
 twitter: sanchezleite13
-icon: assets/img/members/jorgev153.png
+icon: assets/img/members/default.png
 ---
 
 Miebro de Goyobot.
