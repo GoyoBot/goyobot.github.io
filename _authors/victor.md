@@ -1,19 +1,17 @@
 ---
 # Your link name. If empty, the default is `/authors/<user>`
 permalink: victor
-
 team_id: dam          # Must and id in `_data/teams.yml`
 author_id: victor     # Your `author:` in posts
 
 # Author info - edit this at any time
-shortname: Miembro
-fullname: Este personaje es un misterio...
-website: http://goyobot.github.io
-github: goyobot
-twitter: goyobot
-icon: assets/img/members/default.png
+shortname: Víctor
+fullname: Víctor Pastor Urueña
+website: http://victorpastor.com
+github: pokevik21
+icon: assets/img/members/vic.png
 ---
 
-Miebro de Goyobot.
+Miebro de DAM it!
   
-Aún no tiene descripción, pero te aseguramos que toma microchips con leche para desayunar. 💪
+
