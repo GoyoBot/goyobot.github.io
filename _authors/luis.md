@@ -6,14 +6,16 @@ team_id: dam          # Must and id in `_data/teams.yml`
 author_id: luis       # Your `author:` in posts
 
 # Author info - edit this at any time
-shortname: Miembro
-fullname: Este personaje es un misterio...
-website: http://goyobot.github.io
-github: goyobot
-twitter: goyobot
-icon: assets/img/members/default.png
+shortname: Eirine
+fullname: Luis Enrique
+website: https://www.instagram.com/arrobamanlester69/
+github: https://github.com/arrobaEirine
+twitter: https://twitter.com/alfadelta_pussy
+icon: assets/img/members/luisputoamo.jpg
 ---
 
-Miebro de Goyobot.
+Pos soy de Goyobot.
   
-Aún no tiene descripción, pero te aseguramos que toma microchips con leche para desayunar. 💪
+Me metí para ver como hacer un robot asesino.
+Al final el robot solo podrá sostener un lápiz y quitarselo a otro robot.
+Un bully bot, awesome.
