@@ -6,14 +6,14 @@ team_id: smr          # Must and id in `_data/teams.yml`
 author_id: lucas      # Your `author:` in posts
 
 # Author info - edit this at any time
-shortname: Miembro
-fullname: Este personaje es un misterio...
+shortname: Lucas
+fullname: Lucas Maestro Pokémon
 website: http://goyobot.github.io
 github: goyobot
-twitter: goyobot
-icon: assets/img/members/default.png
+twitter: lucassenarosa
+icon: assets/img/members/lucas.png
 ---
 
 Miebro de Goyobot.
   
-Aún no tiene descripción, pero te aseguramos que toma microchips con leche para desayunar. 💪
+Me gustan los helados.
