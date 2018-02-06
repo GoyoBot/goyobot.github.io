@@ -20,4 +20,4 @@ Estudiante de Sistemas Microinformáticos y Redes en el CEC Gregorio Fernández.
 
 > De mi solo puedo decir que tengo un gran compromiso hacia lo que me importa. El tema es... ¿Me Importas?
 
-Geek  |  Photo Editing  |  Code the web  |  Graphic Designer  | Hylian  
+Geek, Photo Editing, Code the web, Graphic Designer, Hylian.  
