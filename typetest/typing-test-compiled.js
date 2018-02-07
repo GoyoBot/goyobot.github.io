@@ -160,6 +160,15 @@ function isTimer(seconds) {
     return true;
 }
 
+function sendAnalytics(wpm, accuracy, total, correct, incorrect, typed) {
+    ga('send', 'event', 'Typetest', 'wpm', wpm);
+    ga('send', 'event', 'Typetest', 'accuracy', accuracy);
+    ga('send', 'event', 'Typetest', 'total', total);
+    ga('send', 'event', 'Typetest', 'correct', correct);
+    ga('send', 'event', 'Typetest', 'incorrect', incorrect);
+    ga('send', 'event', 'Typetest', 'typed', typed);
+}
+
 function calculateWPM(data) {
     let { seconds, correct, incorrect, total, typed } = data;
     let min = seconds / 60;
@@ -192,6 +201,7 @@ function calculateWPM(data) {
         wpmClass.add("incorrect-word-c");
     }
 
+    sendAnalytics(wpm, accuracy, total, correct, incorrect, typed);
     console.log(wordData);
 }
 
@@ -233,4 +243,3 @@ function restartTest() {
     $("#typebox")[0].value = "";
     location.reload();
 }
-
