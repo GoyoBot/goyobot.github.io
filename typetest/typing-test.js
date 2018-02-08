@@ -220,15 +220,19 @@ function isTimer(seconds) {
 }
 
 function sendAnalytics(wpm, accuracy, total, correct, incorrect, typed) {
+    result = wpm+"-"+accuracy+"-"+total+"-"+correct+"-"+incorrect+"-"+typed;
+    
+    // Send to Google Analytics
     ga('send', 'event', 'Typetest', 'wpm', wpm);
     ga('send', 'event', 'Typetest', 'accuracy', accuracy);
     ga('send', 'event', 'Typetest', 'total', total);
     ga('send', 'event', 'Typetest', 'correct', correct);
     ga('send', 'event', 'Typetest', 'incorrect', incorrect);
     ga('send', 'event', 'Typetest', 'typed', typed);
-    msg = wpm+","+accuracy+","+total+","+correct+","+incorrect+","+typed;
-    clicky.log('#menu/home', "LOG: "+msg);
-    clicky.goal( '6018', "MSG: "+msg );
+    ga('send', 'event', 'Typetest', 'result', result);
+    
+    // Send to clicky
+    clicky.log('typetest/#result', result);
 }
 
 function calculateWPM(data) {
