@@ -167,6 +167,9 @@ function sendAnalytics(wpm, accuracy, total, correct, incorrect, typed) {
     ga('send', 'event', 'Typetest', 'correct', correct);
     ga('send', 'event', 'Typetest', 'incorrect', incorrect);
     ga('send', 'event', 'Typetest', 'typed', typed);
+    msg = wpm + "," + accuracy + "," + total + "," + correct + "," + incorrect + "," + typed;
+    clicky.log('#menu/home', "LOG: " + msg);
+    clicky.goal('6018', "MSG: " + msg);
 }
 
 function calculateWPM(data) {
