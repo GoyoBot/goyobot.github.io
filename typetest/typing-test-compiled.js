@@ -148,6 +148,7 @@ function isTimer(seconds) {
         let typingTimer = setInterval(() => {
             if (time <= 0) {
                 clearInterval(typingTimer);
+                finishTest();
             } else {
                 time -= 1;
                 let timePad = time < 10 ? "0" + time : time; // zero padded
@@ -164,16 +165,22 @@ function sendAnalytics(wpm, accuracy, total, correct, incorrect, typed) {
     result = wpm + "-" + accuracy + "-" + total + "-" + correct + "-" + incorrect + "-" + typed;
 
     // Send to Google Analytics
-    ga('send', 'event', 'Typetest', 'wpm', wpm);
-    ga('send', 'event', 'Typetest', 'accuracy', accuracy);
-    ga('send', 'event', 'Typetest', 'total', total);
-    ga('send', 'event', 'Typetest', 'correct', correct);
-    ga('send', 'event', 'Typetest', 'incorrect', incorrect);
-    ga('send', 'event', 'Typetest', 'typed', typed);
     ga('send', 'event', 'Typetest', 'result', result);
 
     // Send to clicky
     clicky.log('typetest/#result', result);
+}
+
+var finished = false;
+function finishTest() {
+    // Avoid calculating more than once.
+    if (finished) {
+        return;
+    } else {
+        finished = true;
+    }
+
+    calculateWPM(wordData);
 }
 
 function calculateWPM(data) {
@@ -241,12 +248,13 @@ function typingTest(e) {
             wordData.typed += 1; // count each valid character typed
         } else {
             // Display typing test results.
-            calculateWPM(wordData);
+            finishTest();
         }
     }
 }
 
 function restartTest() {
+    finished = false;
     $("#typebox")[0].value = "";
     location.reload();
 }
