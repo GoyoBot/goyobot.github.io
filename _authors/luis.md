@@ -11,7 +11,7 @@ fullname: Luis Enrique
 website: https://www.instagram.com/arrobamanlester69/
 github: https://github.com/arrobaEirine
 twitter: https://twitter.com/alfadelta_pussy
-icon: assets/img/members/luisputoamo.jpg
+icon: assets/img/members/luisputoamo.png
 ---
 
 Pos soy de Goyobot.
