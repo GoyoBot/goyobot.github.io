@@ -11,7 +11,7 @@ fullname: Germán Briceño
 website: http://goyobot.github.io
 github: perroloko69888855553
 twitter: masca_chochas
-icon: assets/img/members/jelmam.PNG
+icon: assets/img/members/jelmam.png
 ---
 
 Miebro de Goyobot.
