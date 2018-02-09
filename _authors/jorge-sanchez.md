@@ -17,4 +17,4 @@ icon: assets/img/members/jorgev153.png
 
 Miebro de Goyobot.
   
-soy un alumno de sistemasmicro2 el cual su fuerte es el trabajo y el trabajo de equipo y es lo que mas me gusta y este es mi primer año que me pongo hacer robotica jejeje eesf
+soy un alumno de sistemasmicro2 el cual su fuerte es el trabajo y el trabajo de equipo y es lo que mas me gusta y este es mi primer año que me pongo hacer robotica jejeje 
