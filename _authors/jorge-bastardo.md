@@ -16,4 +16,4 @@ icon: assets/img/members/jorgeb.png
 
 Miebro de Goyobot.
   
-Aún no tiene descripción, pero te aseguramos que toma microchips con leche para desayunar. 💪
+Yo no venga aqui a pasar el rato vengo a ganar teeela
