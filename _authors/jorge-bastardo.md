@@ -11,7 +11,7 @@ fullname: Este personaje es un misterio...
 website: http://goyobot.github.io
 github: goyobot
 twitter: goyobot
-icon: assets/img/members/default.png
+icon: assets/img/members/jorgeb.png
 ---
 
 Miebro de Goyobot.
