@@ -23,7 +23,7 @@
   type: student
   course: 2° Desarrollo de Aplicaciones Microinformáticas
   name: DAM IT!
-  page: DAM-IT
+  page: dam-it
 
 - id: teacher
   type: teacher
