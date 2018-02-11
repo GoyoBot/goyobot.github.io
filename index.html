@@ -6,7 +6,7 @@ isindex: true
 <div class="container mt-2">
     <header>
         <h1 class="text-center main-logo">GoyoBot</h1>
-        <p class="text-center mx-auto main-description">¡Hola! Somos el grupo de robótica del Centro de Enseñanza <a href="https://gregoriofer.com">Gregorio Fernández</a> de Valladolid.</p>
+        <p class="text-center   mx-auto main-description">¡Hola! Somos el grupo de robótica del Centro de Enseñanza <a href="https://gregoriofer.com">Gregorio Fernández</a> de Valladolid.</p>
     </header>
     <section class="mt-5 equipos-section mx-auto">
         <h2 class="text-center mb-4 mb-md-4 text-success index-section">Nuestros equipos</h2>
@@ -79,39 +79,49 @@ isindex: true
             </div>
         </div>
     </section>
-    <section class="mt-5">
-        <h2 class="text-center text-success index-section">Blog</h2>
-        {% include post-list.html posts=site.posts %}
-    </section>
-{% comment %}
-    {% if paginator.total_pages > 1 %}
-    <nav aria-label="Navegación por las entradas del blog">
-        <ul class="pagination justify-content-center">
-            <li class="page-item{% unless paginator.previous_page %} disabled{% endunless %}">
-                <a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                    <span class="sr-only">Previous</span>
-                </a>
-            </li>
-            {% for page in (1..paginator.total_pages) %}
-                {% if page == paginator.page %}
-                    <li class="page-item active"><span class="page-link">{{ page | pnumber }}</span></li>
-                {% elsif page == 1 %}
-                    <li class="page-item">
-                        <a class="page-link" href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page | pnumber }} <span class="sr-only">(actual)</span></a>
+    
+    
+    <div class="row mt-5">
+        <div class="col-md-8">
+            <section>
+                <h2 class="text-center text-success index-section">Blog</h2>
+                {% include post-list.html posts=site.posts %}
+            </section>
+        {% comment %}
+            {% if paginator.total_pages > 1 %}
+            <nav aria-label="Navegación por las entradas del blog">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item{% unless paginator.previous_page %} disabled{% endunless %}">
+                        <a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only">Previous</span>
+                        </a>
                     </li>
-                {% else %}
-                    <li class="page-item"><a class="page-link" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page | pnumber }}</a></li>
-                {% endif %}
-            {% endfor %}
-            <li class="page-item{% unless paginator.next_page %} disabled{% endunless %}">
-                <a class="page-link" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-    {% endif %}
-{% endcomment %}
+                    {% for page in (1..paginator.total_pages) %}
+                        {% if page == paginator.page %}
+                            <li class="page-item active"><span class="page-link">{{ page | pnumber }}</span></li>
+                        {% elsif page == 1 %}
+                            <li class="page-item">
+                                <a class="page-link" href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page | pnumber }} <span class="sr-only">(actual)</span></a>
+                            </li>
+                        {% else %}
+                            <li class="page-item"><a class="page-link" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page | pnumber }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                    <li class="page-item{% unless paginator.next_page %} disabled{% endunless %}">
+                        <a class="page-link" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            {% endif %}
+        {% endcomment %}
+        </div>
+        <div class="col-md-4">
+            <h2>&nbsp;</h2>
+            <a class="twitter-timeline" data-width="300" data-height="1000" data-dnt="true" data-theme="light" href="https://twitter.com/goyobot?ref_src=twsrc%5Etfw">Tweets by goyobot</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+        </div>
+    </div>
 </div>
