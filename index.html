@@ -3,13 +3,17 @@ layout: index
 isindex: true
 ---
 
-<div class="container mt-2">
-    <header>
+<header class="index-header pt-4 pb-4 bg-dark">
+    <div class="container mt-2">
         <h1 class="text-center main-logo">GoyoBot</h1>
-        <p class="text-center   mx-auto main-description">¡Hola! Somos el grupo de robótica del Centro de Enseñanza <a href="https://gregoriofer.com">Gregorio Fernández</a> de Valladolid.</p>
-    </header>
-    <section class="mt-5 equipos-section mx-auto">
-        <h2 class="text-center mb-4 mb-md-4 text-success index-section">Nuestros equipos</h2>
+        <p class="text-center mx-auto main-description">Grupo de robótica del CEC <a href="https://gregoriofer.com">Gregorio Fernández</a></p>
+    </div>
+</header>
+
+
+<section class="equipos-section mx-auto pt-4 pb-4">
+    <div class="container">
+        <h2 class="text-center text-success index-section">Nuestros equipos</h2>
         <div class="row">
         {% assign teams = site.data.teams | where: 'type', 'student' %}
         {% for team in teams %}
@@ -41,50 +45,55 @@ isindex: true
                 <a href="{{ site.baseurl }}{{ author.url }}"><img src="{{ site.baseurl }}/{{ icon_file }}" alt="Icono de {{ author.shortname }}" width="60" height="60" class="rounded-circle"></a>
             {% endfor %}
         </div>
-    </section>
-    <section style="max-width: 800px;" class="mx-auto mr-auto ml-auto mt-5">
-        <div>
-            <h2 class="text-center mt-4 mb-4 text-success index-section">Lo que nos mueve</h2>
+    </div>
+</section>
+
+<div class="bg-wrap">
+<section class="nosotros-section bg bg-dark pt-4 pb-4">
+    <div class="container mt-2">
+        <div style="max-width: 800px;" class="mx-auto mr-auto ml-auto">
+            <h2 class="text-center text-success index-section">Lo que nos mueve</h2>
             <div class="row">
                 <div class="card col-sm-6 border-0 bg-transparent text-center">
-                    <img class="card-img-top" src="https://image.flaticon.com/icons/svg/544/544542.svg" alt="Trabajo en equipo" height="150"> 
-                    <div class="card-body"> 
-                        <h4 class="card-title method-title text-danger">Colaboración</h4> 
-                        <p class="card-text">Quedamos <span class="text-primary">todas las semanas</span> para trastear <i>as a team</i>. Y frikear :-p</p> 
+                    <img class="card-img-top" src="https://image.flaticon.com/icons/svg/544/544542.svg" alt="Trabajo en equipo" height="150">
+                    <div class="card-body">
+                        <h4 class="card-title method-title text-danger">Colaboración</h4>
+                        <p class="card-text">Quedamos <span class="text-primary">todas las semanas</span> para trastear <i>as a team</i>. Y frikear :-p</p>
                     </div>
                 </div>
-                <div class="card col-sm-6 border-0 bg-transparent text-center"> 
-                    <img src="https://assets.brandfolder.com/p34392sa/v/641755/view.png" alt="Slack logo" class="card-img-top slack-icon mx-auto"> 
+                <div class="card col-sm-6 border-0 bg-transparent text-center">
+                    <img src="{{ site.baseurl }}/assets/img/slack-app-icon.png" alt="Slack logo" class="card-img-top slack-icon mx-auto">
                     <div class="card-body"> 
-                        <h4 class="card-title method-title text-danger">Coodrinación</h4>                                  
-
-                        <p class="card-text">Somos miembros de diferentes ciclos y horarios, así que la <span class="text-danger">comunicación online</span> es fundamental, y Slack es nuestra solución.</p>                                  
-                    </div>                             
+                        <h4 class="card-title method-title text-danger">Coodrinación</h4>
+                        <p class="card-text">Somos miembros de diferentes ciclos y horarios, así que la <span class="text-danger">comunicación online</span> es fundamental, y Slack es nuestra solución.</p>
+                    </div>
                 </div>
-                <div class="card col-sm-6 border-0 bg-transparent text-center"> 
-                    <img class="card-img-top w-75 mx-auto octocat-icon" src="{{ site.baseurl }}/assets/img/Octocat.png" alt="GitHub Octocat logo"> 
-                    <div class="card-body"> 
-                        <h4 class="card-title method-title text-danger">Development</h4>                                  
+                <div class="card col-sm-6 border-0 bg-transparent text-center">
+                    <img class="card-img-top w-75 mx-auto octocat-icon" src="{{ site.baseurl }}/assets/img/Octocat.png" alt="GitHub Octocat logo">
+                    <div class="card-body">
+                        <h4 class="card-title method-title text-danger">Development</h4>
 
-                        <p class="card-text">Usamos <span class="text-success">herramientas modernas</span> como GitHub para nuestros desarrollos. Nos <del>pasamos ficheros</del> hacemos <code>pull request</code>.</p>                                  
-                    </div>                             
+                        <p class="card-text">Usamos <span class="text-success">herramientas modernas</span> como GitHub para nuestros desarrollos. Nos <del>pasamos ficheros</del> hacemos <code>pull request</code>.</p>
+                    </div>
                 </div>
-                <div class="card col-sm-6 border-0 bg-transparent text-center"> 
-                    <img src="{{ site.baseurl }}/assets/img/ArduinoCommunityLogo.png" alt="Arduino community logo" class="card-img-top mx-auto arduino-icon"> 
-                    <div class="card-body"> 
-                        <h4 class="card-title method-title text-danger">Free as in freedom</h4> 
-                        <p class="card-text">El espíritu de <i>«cómo molaría hacer eso»</i> ha conducido a las mejores tecnologías sociales que conocemos, y sólo es posible con <span style="color: #6f42c1;">hardware y software libres</span>.</p> 
+                <div class="card col-sm-6 border-0 bg-transparent text-center">
+                    <img src="{{ site.baseurl }}/assets/img/ArduinoCommunityLogo.png" alt="Arduino community logo" class="card-img-top mx-auto arduino-icon">
+                    <div class="card-body">
+                        <h4 class="card-title method-title text-danger">Free as in freedom</h4>
+                        <p class="card-text">El espíritu de <i>«cómo molaría hacer eso»</i> ha conducido a las mejores tecnologías sociales que conocemos, y sólo es posible con <span style="color: #6f42c1;">hardware y software libres</span>.</p>
                     </div>                             
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+</div>
     
-    
-    <div class="row mt-5">
+<div class="container pt-4 pb-4">
+    <div class="row">
         <div class="col-md-8">
             <section>
-                <h2 class="text-center text-success index-section">Blog</h2>
+                <h2 class="text-center text-success">Blog</h2>
                 {% include post-list.html posts=site.posts %}
             </section>
         {% comment %}
@@ -119,9 +128,13 @@ isindex: true
             {% endif %}
         {% endcomment %}
         </div>
-        <div class="col-md-4">
-            <h2>&nbsp;</h2>
-            <a class="twitter-timeline" data-width="300" data-height="1000" data-dnt="true" data-theme="light" href="https://twitter.com/goyobot?ref_src=twsrc%5Etfw">Tweets by goyobot</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+        <div class="col-md-4 text-center">
+            <section>
+                <h2>&nbsp;</h2>
+                <a class="twitter-timeline" data-width="400" data-height="1000" data-dnt="true" data-theme="light" href="https://twitter.com/goyobot?ref_src=twsrc%5Etfw">Tweets by goyobot</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </section>
         </div>
     </div>
 </div>
+

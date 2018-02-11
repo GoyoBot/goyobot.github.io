@@ -1,20 +1,58 @@
-.main-logo {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 70px;
-    color: #484848;
-    font-weight: bold;
+
+
+
+.index-header {
+    /* Header image: https://pixabay.com/p-453758/?no_redirect */
+    background-image: url("/assets/img/header.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
-.main-description {
+.index-header .main-logo {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    color: #f91a1a;
+    opacity: 0.6;
+    text-shadow: 2px 2px #210202;
+}
+
+.index-header .main-description {
     max-width: 600px;
+    color: #f2f5f1;
+    opacity: 0.8;
+    font-size: 20pt;
+    text-shadow: 0px 0px 3px #000;
+}
+
+.index-header a {
+    color: #4dec4d;
 }
 
 .equipos-section {
     max-width: 950px;
 }
 
+.nosotros-section {
+    /* https://pixabay.com/es/c%C3%B3digo-jquery-dise%C3%B1o-web-583073/ */
+    background-image: url('/assets/img/bgr-code3.jpg');
+    
+/*    background-attachment: fixed;*/
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+@media only screen and (min-width : 992px)  {
+    .nosotros-section {
+        background-attachment: fixed;
+    }
+}
+
+
 .slack-icon {
-    max-width: 250px;
+    max-width: 150px;
 }
 
 .octocat-icon {
@@ -29,7 +67,14 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
+.post-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+
 .index-section {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
+    font-size: 30pt;
+    text-shadow: 0px 0px 1px #000;
 }
