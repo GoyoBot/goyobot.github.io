@@ -92,3 +92,17 @@
     text-shadow: 0px 0px 1px #000;
     margin-bottom: 20px;
 }
+
+
+/* ====================================================== */
+/* =                    team_profile                    = */
+/* ====================================================== */
+
+.team-container h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 30pt;
+    text-shadow: 0px 0px 1px #000;
+    margin-bottom: 20px;
+    color: #28a745;
+}

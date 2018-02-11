@@ -18,12 +18,14 @@
   course: 2° Sistemas Microinformáticos y Redes
   name: GoyoWarriors
   page: GoyoWarriors
+  logo: /assets/img/teams/goyowarriors-logo.png
 
 - id: dam
   type: student
   course: 2° Desarrollo de Aplicaciones Microinformáticas
   name: DAM IT!
   page: dam-it
+  logo: /assets/img/teams/damit-logo.png
 
 - id: teacher
   type: teacher

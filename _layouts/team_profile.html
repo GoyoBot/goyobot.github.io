@@ -1,0 +1,29 @@
+---
+layout: default
+---
+{% assign teams = site.data.teams | where: 'id', page.team_id %}
+{% assign team = teams[0] %}
+<nav aria-label="breadcrumb" role="navigation">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="{{ site.url }}">GoyoBot</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">Equipo {{ team.name }}</li>
+    </ol>
+</nav>
+<div class="container team-container mb-3">
+    <div class="row">
+        <div class="col-md-4">
+            <img class="team-logo" src="{{ site.baseurl }}{{ team.logo }}" alt="Logo de {{ team.name }}">
+        </div>
+        <div class="col-md-8">
+            <h2>{{ team.name }}</h2>
+            <p>Miembros:</p>
+            <p>
+                {% assign members = site.authors | where: 'team_id', team.id %}
+                {% include authors-img.html authors=members %}
+            </p>
+        </div>
+    </div>
+    {{ content }}
+</div>

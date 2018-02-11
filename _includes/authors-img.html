@@ -1,0 +1,13 @@
+{% comment %}
+# 
+# Input: authors=<list-of-authors>
+# The year is not displayed if it is the current year
+#
+{% endcomment %}<!--
+-->{% for author in include.authors %}<!--
+-->{%   assign icon_file = "assets/img/members/default.png" %}<!--
+-->{%   if author.icon %}<!--
+-->{%     assign icon_file = author.icon %}<!--
+-->{%   endif %}<!--
+--><a href="{{ site.baseurl }}{{ author.url }}"><img class="author-icon rounded-circle" src="{{ site.baseurl }}/{{ icon_file }}" alt="Icono de {{ author.shortname }}"></a><!--
+-->{% endfor %}
