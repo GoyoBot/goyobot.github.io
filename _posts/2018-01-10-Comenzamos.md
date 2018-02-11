@@ -9,17 +9,17 @@ Por fin vamos tomando forma:
 
 <label class="form-check-label">
     <input class="form-check-input" type="checkbox" checked="checked" disabled>
-    Somos una organización en GitHub: <https://github.com/goyobot>.
+    Somos una organización en GitHub: <https://github.com/goyobot>
 </label>
 
 <label class="form-check-label">
     <input class="form-check-input" type="checkbox" checked="checked" disabled>
-    Tenemos web *up and running*: <https://goyobot.github.com>.
+    Tenemos web *up and running*: <https://goyobot.github.com>
 </label>
 
 <label class="form-check-label">
     <input class="form-check-input" type="checkbox" checked="checked" disabled>
-    Cuenta de twitter <i class="fa fa-twitter"></i>: <https://twitter.com/goyobot>.
+    Cuenta de twitter <i class="fa fa-twitter"></i>: <https://twitter.com/goyobot>
 </label>
 
 <label class="form-check-label">
