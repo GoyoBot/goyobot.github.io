@@ -4,14 +4,19 @@ isindex: true
 ---
 
 <header class="index-header pt-4 pb-4 bg-dark">
-    <div class="container mt-2">
+    <div class="container text-center">
         <h1 class="text-center main-logo">GoyoBot</h1>
-        <p class="text-center mx-auto main-description">Grupo de robótica del CEC <a href="https://gregoriofer.com">Gregorio Fernández</a></p>
+        <span class="text-center mx-auto main-description">Grupo de robótica del CEC <a href="https://gregoriofer.com">Gregorio Fernández</a></span>
+
+        <div class="social">
+            <a href="https://github.com/{{ site.github_username }}"><i class="fa fa-github" aria-hidden="true"></i></a> · 
+            <a href="https://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter"></i></a>
+        </div>
     </div>
 </header>
 
 
-<section class="equipos-section mx-auto pt-4 pb-4">
+<section class="equipos-section mx-auto pt-5 pb-5">
     <div class="container">
         <h2 class="text-center text-success index-section">Nuestros equipos</h2>
         <div class="row">
@@ -49,7 +54,7 @@ isindex: true
 </section>
 
 <div class="bg-wrap">
-<section class="nosotros-section bg bg-dark pt-4 pb-4">
+<section class="nosotros-section bg bg-dark pt-5 pb-5">
     <div class="container mt-2">
         <div style="max-width: 800px;" class="mx-auto mr-auto ml-auto">
             <h2 class="text-center text-success index-section">Lo que nos mueve</h2>
@@ -89,11 +94,11 @@ isindex: true
 </section>
 </div>
     
-<div class="container pt-4 pb-4">
+<div class="container pt-5 pb-5">
     <div class="row">
         <div class="col-md-8">
             <section>
-                <h2 class="text-center text-success">Blog</h2>
+                <h2 class="text-center text-success index-section">Blog</h2>
                 {% include post-list.html posts=site.posts %}
             </section>
         {% comment %}

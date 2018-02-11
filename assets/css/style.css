@@ -1,11 +1,10 @@
 
-
-
 .index-header {
     /* Header image: https://pixabay.com/p-453758/?no_redirect */
     background-image: url("/assets/img/header.jpg");
     background-size: cover;
     background-position: center;
+    background-color: #5b935b;
 }
 
 .index-header .main-logo {
@@ -13,7 +12,7 @@
     font-size: 70px;
     font-weight: bold;
     color: #f91a1a;
-    opacity: 0.6;
+    opacity: 0.7;
     text-shadow: 2px 2px #210202;
 }
 
@@ -33,12 +32,20 @@
     max-width: 950px;
 }
 
+.index-header .social {
+    font-size: 30pt;
+    opacity: 0.7;
+}
+.index-header .social a {
+    color: #f91a1a;
+    text-shadow: 1px 1px #210202;
+    margin: 0px;
+    padding: 0px;
+}
+
 .nosotros-section {
     /* https://pixabay.com/es/c%C3%B3digo-jquery-dise%C3%B1o-web-583073/ */
-    background-image: url('/assets/img/bgr-code3.jpg');
-    
-/*    background-attachment: fixed;*/
-    
+    background-image: url('/assets/img/bgr-code.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -77,4 +84,5 @@
     font-weight: bold;
     font-size: 30pt;
     text-shadow: 0px 0px 1px #000;
+    margin-bottom: 20px;
 }
