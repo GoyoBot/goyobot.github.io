@@ -5,7 +5,7 @@ isindex: true
 
 <header class="index-header pt-4 pb-4 bg-dark">
     <div class="container text-center">
-        <h1 class="text-center main-logo">GoyoBot</h1>
+        <h1 class="text-center main-logo"><a href="{{ site.baseurl }}">GoyoBot</a></h1>
         <span class="text-center mx-auto main-description">Grupo de robótica del CEC <a href="https://gregoriofer.com">Gregorio Fernández</a></span>
 
         <div class="social">
@@ -18,37 +18,37 @@ isindex: true
 
 <section class="equipos-section mx-auto pt-5 pb-5">
     <div class="container">
-        <h2 class="text-center text-success index-section">Nuestros equipos</h2>
+        <h2 class="text-center text-success index-section mb-0">Nuestros equipos</h2>
         <div class="row">
         {% assign teams = site.data.teams | where: 'type', 'student' %}
         {% for team in teams %}
-            <div class="text-center col-md-6 mt-md-0 mt-4">
+            <div class="text-center col-md-6 mt-md-3 mt-5">
                 <div>
                     <a href="{{ site.baseurl }}{{ team.page }}" role="button" class="btn btn-danger w-75" style="max-width: 500px;">{{ team.name }}</a>
                 </div>
-                <div class="mt-3">
-                {% assign authors = site.authors | where: 'team_id', team.id %}
-                {% for author in authors %}
-                {%   assign icon_file = "assets/img/members/default.png" %}
-                {%   if author.icon %}
-                {%     assign icon_file = author.icon %}
-                {%   endif %}
-                    <a href="{{ site.baseurl }}{{ author.url }}"><img src="{{ site.baseurl }}/{{ icon_file }}" alt="Icono de {{ author.shortname }}" width="60" height="60" class="rounded-circle"></a>
-                {% endfor %}
-                </div>                         
+                <div class="mt-3"><!--
+                -->{% assign authors = site.authors | where: 'team_id', team.id %}<!--
+                -->{% for author in authors %}<!--
+                -->{%   assign icon_file = "assets/img/members/default.png" %}<!--
+                -->{%   if author.icon %}<!--
+                -->{%     assign icon_file = author.icon %}<!--
+                -->{%   endif %}<!--
+                    --><a href="{{ site.baseurl }}{{ author.url }}"><img class="author-icon rounded-circle" src="{{ site.baseurl }}/{{ icon_file }}" alt="Icono de {{ author.shortname }}"></a><!--
+                -->{% endfor %}<!--
+                --></div>
             </div>
         {% endfor %}
         </div>
-        <div class="text-center mt-4">
-            <p style="margin-bottom: 7px;">Y además:</p>
-            {% assign authors = site.authors | where: 'team_id', 'teacher' %}
-            {% for author in authors %}
-            {%   assign icon_file = "assets/img/members/default.png" %}
-            {%   if author.icon %}
-            {%     assign icon_file = author.icon %}
-            {%   endif %}
-                <a href="{{ site.baseurl }}{{ author.url }}"><img src="{{ site.baseurl }}/{{ icon_file }}" alt="Icono de {{ author.shortname }}" width="60" height="60" class="rounded-circle"></a>
-            {% endfor %}
+        <div class="text-center mt-5">
+            <p style="margin-bottom: 7px;">Y además:</p><!--
+            -->{% assign authors = site.authors | where: 'team_id', 'teacher' %}<!--
+            -->{% for author in authors %}<!--
+            -->{%   assign icon_file = "assets/img/members/default.png" %}<!--
+            -->{%   if author.icon %}<!--
+            -->{%     assign icon_file = author.icon %}<!--
+            -->{%   endif %}<!--
+                --><a href="{{ site.baseurl }}{{ author.url }}"><img class="author-icon rounded-circle" src="{{ site.baseurl }}/{{ icon_file }}" alt="Icono de {{ author.shortname }}"></a><!--
+            -->{% endfor %}
         </div>
     </div>
 </section>

@@ -7,13 +7,14 @@
     background-color: #5b935b;
 }
 
-.index-header .main-logo {
+.index-header .main-logo a {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 70px;
     font-weight: bold;
     color: #f91a1a;
     opacity: 0.7;
     text-shadow: 2px 2px #210202;
+    text-decoration: none;
 }
 
 .index-header .main-description {
@@ -57,6 +58,11 @@
     }
 }
 
+.author-icon {
+    margin: 2px;
+    width: 90px;
+    height: 90px;
+}
 
 .slack-icon {
     max-width: 150px;
