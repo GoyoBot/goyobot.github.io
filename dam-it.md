@@ -6,7 +6,6 @@ container: false
 ---
 <style>
 .team-container .team-logo {
-    border-style: double;
     border-color: #555;
     height: 400px;
 }
