@@ -11,19 +11,39 @@ layout: default
         <li class="breadcrumb-item active" aria-current="page">Equipo {{ team.name }}</li>
     </ol>
 </nav>
-<div class="container team-container mb-3">
-    <div class="row">
-        <div class="col-md-4">
+<div class="container team-container">
+    <div class="row mb-3">
+        <div class="col-md-4 mb-2 text-center">
             <img class="team-logo" src="{{ site.baseurl }}{{ team.logo }}" alt="Logo de {{ team.name }}">
         </div>
-        <div class="col-md-8">
+        <div class="col-md-8 mt-4 text-center">
             <h2>{{ team.name }}</h2>
             <p>Miembros:</p>
-            <p>
+            <div>
                 {% assign members = site.authors | where: 'team_id', team.id %}
                 {% include authors-img.html authors=members %}
-            </p>
+            </div>
         </div>
     </div>
     {{ content }}
+    
+    <div class="container pt-5 pb-5">
+        <div class="row">
+            <div class="col-md-8">
+                <section>
+                    <h2 class="text-center text-success index-section">Entradas del equipo</h2>
+                    {% assign posts = site.posts | where: 'author', team.team_id %}
+                    {% include post-list.html posts=site.posts %}
+                </section>
+            </div>
+            <div class="col-md-4 text-center">
+                <section>
+                    <h2>&nbsp;</h2>
+                    <a class="twitter-timeline" data-width="400" data-height="1000" data-dnt="true" data-theme="light" href="https://twitter.com/goyobot?ref_src=twsrc%5Etfw">Tweets by goyobot</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </section>
+            </div>
+        </div>
+    </div>
+    
 </div>
