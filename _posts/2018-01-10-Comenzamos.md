@@ -24,12 +24,12 @@ Por fin vamos tomando forma:
 
 <label class="form-check-label">
     <input class="form-check-input" type="checkbox" checked="checked" disabled>
-    Nombre del equipo de DAM: **DAM IT!**{:.badge .badge-danger}
+    Nombre del equipo de DAM: [**DAM IT!**{:.badge .badge-danger}]({{ site.baseurl }}{% link dam-it.md %})
 </label>
 
 <label class="form-check-label">
     <input class="form-check-input" type="checkbox" checked="checked" disabled>
-    Nombre del equipo de SMR: **GoyoWarriors**{:.badge .badge-danger}
+    Nombre del equipo de SMR: [**GoyoWarriors**{:.badge .badge-danger}]({{ site.baseurl }}{% link GoyoWarriors.md %})
 </label>
 
 Por cierto, ¡[Jekyll](https://jekyllrb.com) es genial!
