@@ -14,7 +14,7 @@ Por fin vamos tomando forma:
 
 <label class="form-check-label">
     <input class="form-check-input" type="checkbox" checked="checked" disabled>
-    Tenemos web *up and running*: <https://goyobot.github.com>
+    Tenemos web *up and running*: <https://goyobot.github.io>
 </label>
 
 <label class="form-check-label">

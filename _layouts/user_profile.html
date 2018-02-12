@@ -22,7 +22,7 @@ layout: default
             <i class="fa fa-angle-right" aria-hidden="true"></i>
         {% endif %}
         {% for team in teams %}
-            <a href="{{ site.basename}}/{{ team.page }}" class="badge badge-danger">{{ team.name }}</a>
+            <a href="{{ site.basename }}{{ team.page }}" class="badge badge-danger">{{ team.name }}</a>
         {% endfor %}
         </p>
         <p class="mb-0"><a href="{{ author.url }}">{{ page.website }}</a></p>

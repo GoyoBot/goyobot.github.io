@@ -9,8 +9,8 @@ author_id: luis       # Your `author:` in posts
 shortname: Eirine
 fullname: Luis Enrique
 website: https://www.instagram.com/arrobamanlester69/
-github: https://github.com/arrobaEirine
-twitter: https://twitter.com/alfadelta_pussy
+github: arrobaEirine
+twitter: alfadelta_pussy
 icon: assets/img/members/luisputoamo.png
 ---
 
