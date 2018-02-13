@@ -28,22 +28,26 @@ layout: default
     {{ content }}
     
     <div class="container pt-5 pb-5">
+{% if page.twitter_search %}
         <div class="row">
             <div class="col-md-8">
+{% endif %}
                 <section>
                     <h2 class="text-center text-success index-section">Entradas del equipo</h2>
                     {% assign posts = site.posts | where: 'author', team.team_id %}
                     {% include post-list.html posts=site.posts %}
                 </section>
+{% if page.twitter_search %}
             </div>
             <div class="col-md-4 text-center">
                 <section>
                     <h2>&nbsp;</h2>
-                    <a class="twitter-timeline" data-width="400" data-height="1000" data-dnt="true" data-theme="light" href="https://twitter.com/goyobot?ref_src=twsrc%5Etfw">Tweets by goyobot</a>
-                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    {{ page.twitter_search }}
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                 </section>
             </div>
         </div>
+{% endif %}
     </div>
     
 </div>
