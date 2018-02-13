@@ -1,0 +1,14 @@
+{% comment %}
+# 
+# Displays an image inside a post.
+# The image must be located in /assets/img/posts/
+# 
+# Use: {% include posts.html src="image.jpg" alt="Description" %}
+#
+{% endcomment %}
+{% assign src = '/assets/img/posts/' | append: include.src %}
+<div class="text-center">
+    <a href="{{ src }}">
+        <img src="{{ site.baseurl }}{{ src }}" alt="{{ include.alt }}" class="img-fluid">
+    </a>
+</div>

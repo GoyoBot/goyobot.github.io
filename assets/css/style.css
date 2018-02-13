@@ -52,7 +52,7 @@
     background-size: cover;
     color: white;
 }
-@media only screen and (min-width : 992px)  {
+@media only screen and (min-width : 992px) {
     .nosotros-section {
         background-attachment: fixed;
     }
@@ -136,3 +136,19 @@ footer {
     height: 100px;
     color: #7b7b7b;
 }
+
+
+
+/* ==================================== */
+/* =               Posts              = */
+/* ==================================== */
+article img {
+    border-radius: 4px;
+    box-shadow: 0px 2px 5px #3b3b3b80;
+}
+@media only screen and (min-width : 992px) {
+    article img {
+        width: 80%;
+    }
+}
+
