@@ -165,7 +165,7 @@ function sendAnalytics(wpm, accuracy, total, correct, incorrect, typed) {
     result = wpm + "-" + accuracy + "-" + total + "-" + correct + "-" + incorrect + "-" + typed;
 
     // Send to Google Analytics
-    ga('send', 'event', 'Typetest', 'result', result);
+    // ga('send', 'event', 'Typetest', 'result', result);
 
     // Send to clicky
     clicky.log('typetest/#result', result);
