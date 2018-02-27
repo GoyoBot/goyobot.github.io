@@ -168,7 +168,11 @@ function sendAnalytics(wpm, accuracy, total, correct, incorrect, typed) {
     // ga('send', 'event', 'Typetest', 'result', result);
 
     // Send to clicky
-    clicky.log('typetest/#result', result);
+    //clicky.log('typetest/#result', result);
+    
+    
+    _LTracker.push(result);
+
 }
 
 var finished = false;
